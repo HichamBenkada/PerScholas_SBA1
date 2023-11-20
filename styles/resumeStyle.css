@@ -1,0 +1,35 @@
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+#contactInfo{
+    display: flex;
+    flex-flow: wrap row;
+}
+
+th{
+    text-align: right;
+}
+
+td{
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+.email:hover::before{
+    content: "Send an email to: ";
+    color: white;
+}
+
+#profilePicture{
+    border-radius: 20px;
+    float:inline-start;
+}
+

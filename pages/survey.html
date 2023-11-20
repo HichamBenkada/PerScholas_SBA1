@@ -3,170 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .btn {
-        border-radius: 5px;
-        background-color: lightgreen;
-      }
+    <title>SurveyForm</title>
 
-      .btn:hover {
-        font-size: 1.5em;
-        background-color: blue;
-        color: white;
-      }
-    </style>
-    <link rel="stylesheet" href="../styles/style.css" />
-    <style>
-      h1,
-      p {
-        text-align: center;
-      }
+    <link rel="stylesheet" href="../styles/navStyle.css" />
+    <link rel="stylesheet" href="../styles/surveyStyle.css" />
 
-      table th,
-      td {
-        text-align: center;
-        border-bottom: 1px solid skyblue;
-      }
-
-      td:first-child {
-        text-align: start;
-      }
-    </style>
   </head>
 
-  <body style="background-color: #bc6c25">
+  <body>
+    <!-- Navigation bar -->
     <ul>
       <li><a href="./index.html">Home</a></li>
       <li><a href="./interactive_resume.html">Resume</a></li>
       <li style="float: right">
-        <a class="active" href="survey.html">Survey Form</a>
+        <a class="activePage" href="survey.html">Survey Form</a>
       </li>
     </ul>
 
     <h1>Survey form</h1>
-    <form
-      action="#"
-      style="
-        display: flex;
-        flex-flow: column wrap;
-        background-color: #dda15e;
-        border-radius: 10px;
-        /* width: 500px; */
-        padding: 10px 40px 10px;
-        margin: auto 20px;
-        text-align: start;
-      "
-    >
-      <label
-        >Name:
-        <input
-          size="50"
-          type="text"
-          name="userName"
-          placeholder="Enter your Name"
-          required
-        /><br />
-      </label>
+    <form action="#" >
 
-      <label
-        ><br />Email:
-        <input
-          size="50"
-          type="email"
-          name="email"
-          placeholder="Enter your Email"
-          required
-        /><br />
+      <label> Name:<input size="50" type="name" name="userName" placeholder="Enter your Name" required/>
       </label>
-
-      <label
-        ><br />
-        Age: (Optional)
-        <input size="41" type="text" name="age" placeholder="Age" /> </label
-      ><br />
+      <br />
 
       <label>
-        <br />Gender: <input type="radio" name="gender" />Male
+        Email:<input size="50" type="email" name="email" placeholder="Enter your Email" required />
+      </label>
+      <br />
+
+      <label>
+        Age: (Optional) <input size="41" type="text" name="age" placeholder="Age" />
+      </label>
+      <br />
+
+      <!-- Gender fieldset -->
+      <fieldset>
+        <legend>Gender:</legend>
+        <br />
+        <label>
+        <input type="radio" name="gender" />Male 
+        </label>
+        <label>
         <input type="radio" name="gender" />Female
+        </label>
+        <label>
         <input type="radio" name="gender" />Other:
-        <input type="text" size="19" placeholder="Enter your Gender" /> <br />
+                    <input type="text" size="19" placeholder="Enter your Gender" />
+        </label>
+      </fieldset>
+      <br />
+      
+      <label>
+        Date: <input type="date" /> 
       </label>
+      <br />
 
       <label>
-        <br />Date:
-        <input type="date" /> </label
-      ><br />
+        What do you use the computer for? (Select all that apply)
+      </label>
+      <label>
+        <input type="checkbox" /> Work
+      </label>
+      <label>
+        <input type="checkbox" /> Internet & Social Media
+      </label>
+      <label>
+        <input type="checkbox" /> Education & Learning 
+      </label>
+      <label>
+        <input type="checkbox" /> Gaming
+      </label>
+      <br/>
 
       <label>
-        <br />What do you use the computer for? (select all that applay)</label
-      >
-      <label><input type="checkbox" /> Internet & Social Media<br /></label>
-      <label> <input type="checkbox" /> Education & Learning <br /></label>
-      <label><input type="checkbox" /> Gaming <br /> </label>
-      <label> <input type="checkbox" /> Work</label>
-
-      <label>
-        <br />What is your favoret browser? (select all that applay)</label
-      >
-
+        What are your favorite browsers?
+      </label>
+      <label><input type="checkbox" /> Internet Explorer</label> 
       <label><input type="checkbox" /> Safari</label>
       <label><input type="checkbox" /> Google Chrome</label>
       <label><input type="checkbox" /> Firefox </label>
-      <label><input type="checkbox" /> Internet Explorer</label> <br />
-
+      <label><input type="checkbox" /> Brave </label>
+      <label><input type="checkbox" /> Opera </label>
+      <br />
+      
       <label>
-        Kindly rate your experience interacting with my project: <br />
-        <table>
-          <tr>
+        How would you rate your experience interacting with my project?
+      </label>
+      <br />
+      
+      <table>
+        <tr>
             <th></th>
-            <th>Very Unsatisfied</th>
-            <th>Somewhat Satisfied</th>
-            <th>Very Satisfied</th>
+            <th> Very Unsatisfied </Very></th>
+            <th> Somewhat Satisfied </th>
+            <th> Very Satisfied </th>
           </tr>
           <tr>
-            <td><label for="radio1">Ease of Use</label></td>
-            <td><input type="radio" name="radio1" id="radio1" /></td>
-            <td><input type="radio" name="radio1" id="radio1" /></td>
-            <td><input type="radio" name="radio1" id="radio1" /></td>
+            <td>Ease of Use</td>
+            <td><input type="radio" name="radio1" /></td>
+            <td><input type="radio" name="radio1" /></td>
+            <td><input type="radio" name="radio1" /></td>
           </tr>
           <tr>
-            <td><label for="radio2">Functionality</label></td>
-            <td><input type="radio" name="radio2" id="radio2" /></td>
-            <td><input type="radio" name="radio2" id="radio2" /></td>
-            <td><input type="radio" name="radio2" id="radio2" /></td>
+            <td>Functionality</td>
+            <td><input type="radio" name="radio2" /></td>
+            <td><input type="radio" name="radio2" /></td>
+            <td><input type="radio" name="radio2" /></td>
           </tr>
           <tr>
-            <td><label for="radio3">Responsivness</label></td>
-            <td><input type="radio" name="radio3" id="radio3" /></td>
-            <td><input type="radio" name="radio3" id="radio3" /></td>
-            <td><input type="radio" name="radio3" id="radio3" /></td>
+            <td>Responsivness</td>
+            <td><input type="radio" name="radio3" /></td>
+            <td><input type="radio" name="radio3" /></td>
+            <td><input type="radio" name="radio3" /></td>
           </tr>
           <tr>
-            <td><label for="radio4">Overall Experience</label></td>
-            <td><input type="radio" name="radio4" id="radio4" /></td>
-            <td><input type="radio" name="radio4" id="radio4" /></td>
-            <td><input type="radio" name="radio4" id="radio4" /></td>
+            <td>Overall Experience</td>
+            <td><input type="radio" name="radio4" /></td>
+            <td><input type="radio" name="radio4" /></td>
+            <td><input type="radio" name="radio4" /></td>
           </tr>
         </table>
-      </label>
+      <br />
 
       <label>
-        <br />Any comment or concern: <br />
+        Any comment or concern:
+      </label>
         <textarea
           name="comment"
           placeholder="Enter comment"
-          cols="53"
+          cols="60" rows="10"
         ></textarea>
-      </label>
+        
+        <hr />
 
-      <br />
-      <hr />
-      <div style="text-align: center">
-        <input type="submit" class="btn" />
-      </div>
+        <input type="submit" class="btn" /> 
+        <img src="../images/me.png" alt="me" width="10%" />
+        
     </form>
-
-    <p><i>Thank you for taking the survey</i></p>
+    
+    <p>
+      <i>Thank you for taking the survey</i>
+    </p>
   </body>
 </html>

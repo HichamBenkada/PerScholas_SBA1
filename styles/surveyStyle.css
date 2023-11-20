@@ -1,0 +1,40 @@
+h1, p {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-flow: wrap column ;
+  justify-content: space-evenly;
+  background-color: #dda15e;
+  border-radius: 10px;
+  margin: 0 15%;
+  padding: 5%;
+  text-align: start;
+}
+
+fieldset,legend{
+  text-align: left;
+  border: none;
+  padding:0;
+  margin: 0;
+}
+  
+td:not(:first-child){
+  border: 1px dashed skyblue;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.btn {
+  border-radius: 5px;
+  background-color: lightgreen;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  font-size: 1.5em;
+  background-color: blue;
+  color: white;
+}
