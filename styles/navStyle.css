@@ -1,18 +1,18 @@
-body{
+body {
   background-color: #bc6c25;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
-  padding:0;
-  display:flex; 
+  padding: 0;
+  display: flex;
   border-radius: 10px;
 }
 
 li {
   border-right: 1px solid #bbb;
-  background-color: #333;
+  border-left: 1px solid #bbb;
   border-radius: 10px;
 }
 
@@ -37,26 +37,39 @@ li a:hover:not(.active) {
 .activePage {
   background-color: #04aa6d;
   border-radius: 10px;
+  width:10em ;
 }
 
 div {
   border: 1px dashed skyblue;
   border-radius: 10px;
   text-align: left;
-  margin: 2%;
-  padding:0 5%;
+  margin: 1% auto;
+  padding: 0 5%;
   width: 80%;
 }
 
-img{
+
+img {
   border-radius: 15px;
-  margin:0 auto;
-  transition-duration:2s;
+  margin: 0 auto;
+  transition-duration: 2s;
 }
 
-img:hover{
-  transform: rotate(180deg);
-  
+img:hover {
+  transform: rotate(60deg);
+}
+
+.btn {
+  border-radius: 5px;
+  background-color: lightgreen;
+  margin: 5% auto;
+}
+
+.btn:hover {
+  font-size: 1.5em;
+  background-color: blue;
+  color: white;
 }
 
 /* @media only screen (max-wid) {

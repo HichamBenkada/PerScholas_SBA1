@@ -27,9 +27,3 @@ a{
     content: "Send an email to: ";
     color: white;
 }
-
-#profilePicture{
-    border-radius: 20px;
-    float:inline-start;
-}
-
