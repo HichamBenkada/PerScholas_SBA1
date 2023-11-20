@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="../styles/navStyle.css" />
     <link rel="stylesheet" href="../styles/surveyStyle.css" />
-
   </head>
 
   <body>
@@ -15,26 +14,36 @@
     <ul>
       <li><a href="./index.html">Home</a></li>
       <li><a href="./interactive_resume.html">Resume</a></li>
-      <li style="float: right"><a class="activePage" href="survey.html">Survey</a>
+      <li style="float: right">
+        <a class="activePage" href="survey.html">Survey</a>
       </li>
-      <li style="float: right"><a href="logIn.html">LogIN</a>
-      </li>
+      <li style="float: right"><a href="logIn.html">LogIN</a></li>
     </ul>
 
     <h1>Survey Form</h1>
-    <form action="#" >
-
-      <label> Name:<input size="50" type="name" name="userName" placeholder="Enter your Name" required/>
+    <form action="#">
+      <label>
+        Name:<input
+          type="name"
+          name="userName"
+          placeholder="Enter your Name"
+          required
+        />
       </label>
       <br />
 
       <label>
-        Email:<input size="50" type="email" name="email" placeholder="Enter your Email" required />
+        Email:<input
+          type="email"
+          name="email"
+          placeholder="Enter your Email"
+          required
+        />
       </label>
       <br />
 
       <label>
-        Age: (Optional) <input size="41" type="text" name="age" placeholder="Age" />
+        Age: (Optional) <input type="text" name="age" placeholder="Age" />
       </label>
       <br />
 
@@ -42,63 +51,50 @@
       <fieldset>
         <legend>Gender:</legend>
         <br />
+        <label> <input type="radio" name="gender" />Male </label>
+        <label> <input type="radio" name="gender" />Female </label>
         <label>
-        <input type="radio" name="gender" />Male 
-        </label>
-        <label>
-        <input type="radio" name="gender" />Female
-        </label>
-        <label>
-        <input type="radio" name="gender" />Other:
-                    <input type="text" size="19" placeholder="Enter your Gender" />
+          <input type="radio" name="gender" />Other:
+          <input type="text" size="19" placeholder="Enter your Gender" />
         </label>
       </fieldset>
       <br />
-      
-      <label>
-        Date: <input type="date" /> 
-      </label>
+
+      <label> Date: <input type="date" /> </label>
       <br />
 
-      <label>
-        What do you use the computer for? (Select all that apply)
-      </label>
-      <label>
-        <input type="checkbox" /> Work
-      </label>
-      <label>
-        <input type="checkbox" /> Internet & Social Media
-      </label>
-      <label>
-        <input type="checkbox" /> Education & Learning 
-      </label>
-      <label>
-        <input type="checkbox" /> Gaming
-      </label>
-      <br/>
+      <label> What do you use the computer for? (Select all that apply) </label>
+      <label> <input type="checkbox" /> Work </label>
+      <label> <input type="checkbox" /> Internet & Social Media </label>
+      <label> <input type="checkbox" /> Education & Learning </label>
+      <label> <input type="checkbox" /> Gaming </label>
+      <br />
 
       <label>
         What are your favorite browsers?
+        <select>
+          <option value="safari" selected>--Please choose an option--</option>
+          <option value="IE">Internet Explorer</option>
+          <option value="safari">Safari</option>
+          <option value="Google Chrome">Google Chrome</option>
+          <option value="Firefox">Firefox</option>
+          <option value="Brave">Brave</option>
+          <option value="Opera">Opera</option>
+        </select>
       </label>
-      <label><input type="checkbox" /> Internet Explorer</label> 
-      <label><input type="checkbox" /> Safari</label>
-      <label><input type="checkbox" /> Google Chrome</label>
-      <label><input type="checkbox" /> Firefox </label>
-      <label><input type="checkbox" /> Brave </label>
-      <label><input type="checkbox" /> Opera </label>
       <br />
-      
+
       <label>
         How would you rate your experience interacting with my project?
-      </label>
-      <br />
-      
-      <table>
-        <tr>
+
+        <br />
+
+        <table>
+          <tr>
             <th></th>
-            <th> Very Unsatisfied </Very></th>
-            <th> Somewhat Satisfied </th>
-            <th> Very Satisfied </th>
+            <th>Very Unsatisfied</th>
+            <th>Somewhat Satisfied</th>
+            <th>Very Satisfied</th>
           </tr>
           <tr>
             <td>Ease of Use</td>
@@ -125,24 +121,21 @@
             <td><input type="radio" name="radio4" /></td>
           </tr>
         </table>
+      </label>
       <br />
 
       <label>
-        Any comment or concern:
-      </label>
-        <textarea
-          name="comment"
-          placeholder="Enter comment"
-          cols="60" rows="10"
-        ></textarea>
-        
-        <hr />
+        Any comment or concern: <br />
 
-        <input type="submit" class="btn" /> 
-        <img src="../images/me.png" alt="me" width="10%" />
-        
+        <textarea name="comment" placeholder="Enter comment"></textarea>
+      </label>
+
+      <hr />
+
+      <input type="submit" class="btn" />
+      <img src="../images/me.png" alt="me" width="10%" />
     </form>
-    
+
     <p>
       <i>Thank you for taking the survey</i>
     </p>

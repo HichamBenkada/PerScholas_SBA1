@@ -3,12 +3,10 @@ header{
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
 }
 
-#contactInfo{
-    display: flex;
-    flex-flow: wrap row;
-}
 
 th{
     text-align: right;
@@ -17,6 +15,16 @@ th{
 td{
     text-align: left;
 }
+
+div {
+    border: 1px dashed skyblue;
+    border-radius: 10px;
+    text-align: left;
+    margin: 1%;
+    padding: 0 5%;
+    /* width: 80%; */
+  }
+  
 
 a{
     text-decoration: none;
